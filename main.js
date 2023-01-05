@@ -20,3 +20,36 @@ document.querySelector("#app").innerHTML = `
   </div>
 `;
 setupCounter(document.querySelector("#counter"));
+
+// const getCountryData = function (country) {
+//   fetch(`https://restcountries.com/v3.1/alpha/${country}`)
+//     .then(function (response) {
+//       console.log(response);
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       console.log(data);
+//     });
+// };
+
+// getCountryData("IN");
+
+// const getCountryData = function (country) {
+//   fetch(`https://restcountries.com/v3.1/alpha/${country}`)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log(data);
+//       const borderingCountry = data[0].borders?.[0];
+//       if (!borderingCountry) return;
+//       return fetch(`https://restcountries.com/v3.1/alpha/${borderingCountry}`);
+//     })
+//     .then((response) => response.json())
+//     .then((data) => console.log(data))
+//     .catch((error) => console.log(error));
+// };
+// getCountryData("IN");
+
+console.log("Test start");
+setTimeout(() => console.log("0 second timer"));
+Promise.resolve("Resolved Promise 1").then((res) => console.log(res));
+console.log("test end");
