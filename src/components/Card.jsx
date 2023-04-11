@@ -4,7 +4,7 @@ import Button from "./Button";
 const Card = (props) => {
   return (
     <div
-      className={` rounded-xl shadow-lg px-8 py-10 text-center ${
+      className={` rounded-xl shadow-lg px-8 py-8 text-center ${
         props.plan.isRecommended
           ? "text-white bg-black bg-gradient-to-b from-lavender-light to-lavender-dark"
           : "text-grayishBlue-dark bg-white"
@@ -33,6 +33,7 @@ const Card = (props) => {
           );
         })}
       </div>
+      <Button primary={!props.plan.isRecommended} />
     </div>
   );
 };
