@@ -1,12 +1,10 @@
-export const plans = [
+const plans = [
   {
     id: 1,
     name: "Basic",
     price: 19.99,
     annualPrice: 199.99,
-    storage: "500 GB",
-    usersAllowed: 2,
-    sendLimit: "3 GB",
+    features: ["500 GB Storage", "2 Users Allowed", "Send up to 3 GB"],
     isRecommended: false,
   },
   {
@@ -14,9 +12,7 @@ export const plans = [
     name: "Professional",
     price: 24.99,
     annualPrice: 249.99,
-    storage: "1 TB",
-    usersAllowed: 5,
-    sendLimit: "10 GB",
+    features: ["2 TB Storage", "5 Users Allowed", "Send up to 10 GB"],
     isRecommended: true,
   },
   {
@@ -24,9 +20,9 @@ export const plans = [
     name: "Master",
     price: 39.99,
     annualPrice: 399.99,
-    storage: "2 TB",
-    usersAllowed: 10,
-    sendLimit: "20 GB",
+    features: ["2 TB Storage", "10 Users Allowed", "Send up to 20 GB"],
     isRecommended: false,
   },
 ];
+
+export default plans;
