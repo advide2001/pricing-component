@@ -6,7 +6,7 @@ const Card = (props) => {
     <div
       className={` rounded-xl shadow-lg px-8 py-8 text-center ${
         props.plan.isRecommended
-          ? "text-white bg-black bg-gradient-to-b from-lavender-light to-lavender-dark"
+          ? "text-white bg-black bg-gradient-to-b from-lavender-light to-lavender-dark sm:scale-110"
           : "text-grayishBlue-dark bg-white"
       }
       `}>
@@ -27,7 +27,7 @@ const Card = (props) => {
               key={index}
               className={`${
                 props.plan.isRecommended ? "text-white" : "text-grayishBlue"
-              }  text-sm font-bold w-full py-4`}>
+              }  text-sm font-bold py-4`}>
               {feature}
             </p>
           );
